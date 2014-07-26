@@ -1,0 +1,292 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background: #f6f6f7;
+    background: url("../img/bg.png") repeat;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+    .centerWrapper {
+        margin: auto;
+        width: 1000px;
+    }
+
+.header {
+    background: url(../img/cream_pixels.png) repeat-x;
+    border-bottom: 3px solid #5996c9;
+    height: 70px;
+    padding: 20px 0 0 0;
+    position: fixed;
+        top: 0;
+    z-index: 3; 
+    width: 100%; 
+}
+    .header__logotype {
+         font: 800 36px 'Roboto', sans-serif;
+         float: left;
+    }
+
+    .header__basket {
+        background: #67c9fd;
+        color: #fff;
+        float: right;
+        font-size: 16px;
+        font-weight: bold;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 0 0 15px;
+        position: relative;
+        width: 250px;
+    }
+
+        .header__basket:after {
+            background: url("../img/Shopping-Cart-01-256.png") no-repeat;
+            content: "";
+            height: 32px;
+            position: absolute;
+                top: 9px;
+                right: 30px;
+            width: 32px;
+        }
+
+.feature {
+    background: url("../img/bg_feature.jpg") repeat-x;
+    height: 220px;
+    margin: 85px 0 0 0;
+}
+
+    .feature__inline {
+        list-style: none;
+        margin-left: -40px;
+    }
+
+        .feature__inline li {
+            background: #fff;
+            float: left;
+            height: 145px;
+            margin: 40px 0 0 40px;
+            opacity: 0.92;
+            position: relative;
+            width: 305px;
+        }
+            .feature__inline-icon {
+                content: "";
+                display: block;
+                height: 64px;
+                position: absolute;
+                    left: 120px;
+                    top: 10px;
+                width: 64px;
+            }
+
+                .feature__inline-iconCompass {
+                    background: url("../img/iconcompas.png") no-repeat;
+                }
+
+                .feature__inline-iconMan {
+                    background: url("../img/makefg.png") no-repeat;
+                }
+
+                .feature__inline-iconBuilding {
+                    background: url("../img/Office-01-256.png") no-repeat;
+                }
+
+            .feature__inline-title,
+            .feature__inline-comments {
+                text-align: center;
+            }
+
+            .feature__inline-title {
+                font: 600 18px 'Roboto', sans-serif;
+                padding: 80px 0 0 0;
+                text-transform: uppercase;
+            }
+
+            .feature__inline-comments {
+                font: 400 'Roboto', sans-serif;
+                padding: 10px 0 0 0;
+            }
+
+.product {
+ 
+}
+
+    .product__description {
+      
+    }
+        
+        .product__description-title {
+            font-size: 36px;
+            padding-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .product__description-about {
+            color: #898989;
+            font-weight: bold;
+
+        }
+
+    .product__item {
+        list-style: none;
+        margin: 0 0 0 -20px;
+    }
+
+        .product__item li {
+            background: #ffffff;
+            border-top: 3px solid #5996c9;
+            -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.13);
+               -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.13);
+                    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.13);
+            float: left;
+            height: 240px;
+            margin: 30px 0 0 20px;
+            padding: 10px 0 0 10px;
+            width: 480px;
+        }
+
+        .product__monopod li {
+            border-top: 3px solid #fdbf03;
+        }
+
+            .product__item-image {
+                background: #b0deff;
+                border: 2px solid #bddbf4;
+                float: left;
+                height: 126px;
+                margin: 0 20px 0 0;
+                width: 240px;
+            }
+
+            .product__item-price {
+                float: left;
+            }
+
+                .product__item-title {
+                    font-weight: bold;
+                }
+
+                table {
+                    font-weight: bold;
+                    margin: 10px 0 0 0;
+                }
+
+                    table td {
+                        width: 120px;
+                    }
+
+                .product__item-buy,
+                .product__item-basket {
+                    color: #fff;
+                    display: inline-block;
+                    font-weight: bold;
+                    height: 30px;
+                    line-height: 30px;
+                    margin: 5px 0 0 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: 100px;
+                }
+
+                .product__item-buy:hover,
+                .product__item-basket:hover {
+                    cursor: pointer;
+                }
+
+                    .product__item-buy {
+                        background: #00a8ff;
+                    }
+
+                    .product__item-basket {
+                        background: #fdbf03;
+                    }
+
+            .product__item-descriptor {
+                margin: 10px 0 0 0;
+                font-size: 13px;
+            }
+
+.footer {
+    height: 200px;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
